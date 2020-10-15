@@ -73,7 +73,7 @@ class PCNet(object):
 
          Executes the exhange of current between PCUnits.
         '''
-        for k,c in enumerate(self.conx):
+        for c in self.conx:
             c.send()
 
     def step(self, dt=0.001):
